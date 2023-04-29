@@ -11,3 +11,138 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: #157fc7;
+  padding: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff
+}
+
+
+/* User Avatar */
+/* nav img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: auto;
+} */
+
+/* Main Content */
+h1 {
+  font-size: 2rem;
+  margin: 20px;
+  background:linear-gradient(to right, #0074D9, #2ECC40);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 2px 2px 4px rgba(137, 137, 137, 0.44);
+}
+
+p {
+  margin: 20px;
+}
+
+textarea {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  height: 100px;
+  border: none;
+  resize: none;
+  border: 2px solid #157fc7;
+
+}
+
+button {
+  background-color: #157fc7;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #157fc7;
+}
+
+#response {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.aligncenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aligncenter p,
+.aligncenter textarea,
+.aligncenter button {
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.btn-submit::before {
+  content: "\2708";
+  /* Unicode for plane symbol */
+  margin-right: 5px;
+  font-size: 1.5em;
+}
+
+.btn-submit {
+  padding: 25px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* Set a semi-transparent background color */
+  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+body {
+  background-image: url('https://thumbs.dreamstime.com/b/student-taking-driving-test-instructor-flat-design-background-vector-illustration-driving-test-background-174921389.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight:700;
+}
